@@ -1,4 +1,4 @@
-const mainActivityDefaultPathPattern = 'app/src/main/java/**/*/MainActivity.java';
+const mainActivityDefaultPathPattern = 'app/src/main/java/**/*/MainActivity.{java,kt}';
 
 const process = (androidProjectValidPath, payload, strategy) => {
     var mainActivityPathPattern = `${androidProjectValidPath}/${mainActivityDefaultPathPattern}`;
